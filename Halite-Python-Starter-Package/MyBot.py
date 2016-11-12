@@ -20,9 +20,9 @@ while True:
                         movedPiece = TRUE
                         break
                if not movedPiece and gameMap.getSite(Location(y,x)).strength == 0: #to make pieces of 0 strength stay still
-                    moves.append(Move(Location(x, y), STILL))
-                    movedPiece = True;
-                if not movedPiece:
-                    moves.append(Move(Location(x,y),SOUTH if bool(int(random.random()*2)) else EAST)
-                    movedPiece = True
+                      moves.append(Move(Location(x, y), STILL))
+                      movedPiece = True;
+               if not movedPiece:
+                      moves.append(Move(Location(x,y),SOUTH if bool(int(random.random()*2)) else EAST)
+                      movedPiece = True
     sendFrame(moves)
